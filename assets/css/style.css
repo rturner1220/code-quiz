@@ -1,6 +1,17 @@
-body {
+* { 
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+.content a {
+    color: purple;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    position: absolute;
+    margin-left: 30px;
+    font-size: 18px;
 }
 
 .page-title {
@@ -9,13 +20,15 @@ body {
     font-weight: bold;
     color: black;
     text-align: center;
-    padding: 20px;
+    padding: 10%;
+    padding-bottom: 5%;
 }
 
-header p {
+.content p {
     font-size: 24px;
     text-align: center;
-    padding: 10px;
+    position: relative;
+    padding-bottom: 20px;
 }
 
 .btn {
@@ -23,7 +36,7 @@ header p {
     top: 30%;
     left: 44%;
     border: none;
-    background-color: blue;
+    background-color: dodgerblue;
     border-radius: 25px;
     box-shadow: 0px 2px 6px 0px black;
     color: #ffff;
@@ -38,5 +51,74 @@ header p {
 .btn:hover {
     box-shadow: 0 2px var(--grey);
     top: -2px;
-  }
+}
 
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+} 
+
+.choice-content {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    background-color: dodgerblue;
+    font-size: 28px;
+    color: #ffff;
+    min-width: 80rem;
+}
+
+.choice-content:hover {
+    box-shadow: 0 2px var(--grey);
+    top: -2px;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px 0px black;
+    transform: none;
+ }
+
+.choice-prefix {
+    padding: 2rem 2.5rem;
+}
+
+.choice-text {
+    padding: 2rem;
+    width: 100%;
+}
+
+#challenge {
+    display: flex;
+    justify-content: flex;
+}
+
+.challenge-prefix {
+    text-align: center;
+    font-size: 32px;
+}
+
+.main-text {
+    text-align: center;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid grey;
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressFull {
+    height: 100%;
+    width: 0%;
+}
+
+
+
+@media screen and (max-width: 780px) {
+    .choice-content {
+        min-width: 40rem;
+    }
+}
