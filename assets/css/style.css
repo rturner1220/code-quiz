@@ -1,6 +1,6 @@
 *, *::before, *::after { 
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
     }
 
     :root{
@@ -41,14 +41,14 @@ body {
 #question {
     text-align: center;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 36px;
 }
 
 #quiz-content p {
     text-align: center;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 30px;
 }
 
@@ -67,17 +67,21 @@ body {
     padding: 10px 100px;
     color: white;
     outline: none;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: bold;
+    border-radius: 25px;
 }
 
 .btn:hover {
     border-color: black;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px 0 black;
 }
 
 .quiz-btn, .continue-btn {
-    font-size: 1.5rem;
+    font-size: 2.0rem;
     padding: 10px 30px;
+    cursor: pointer;
 }
 
 .controls {
@@ -88,7 +92,8 @@ body {
 
 .hide {
     display: none;
-}
+}   
+
 
 @media screen and (max-width: 780px) {
     .choice-content {
