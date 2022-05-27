@@ -9,10 +9,14 @@ var throwQuestion, questionIndex;
 
 
 startButton.addEventListener('click', startQuiz)
+// going to the next question
+nextButton.addEventListener('click', () => {
+    questionIndex++
+    setQuestions()
+})
 
 function startQuiz() {
 startButton.classList.add('hide')
-startButton.classList.add("hide-away");
 throwQuestion = myQuestions.sort(() => Math.random() - .5)
 questionIndex = 0
 mainContentElement.classList.remove('hide')
@@ -41,11 +45,18 @@ function showQuestion(question) {
 function resetState() {
  nextButton.classList.add('hide')
  while (answerButtons.firstChild) {
- answerButtons.removeChild(answerButtons.firstChild)
-    }
+     answerButtons.removeChild (answerButtons.firstChild)
+ }
 }
-function selectAnswer(e) {
-    
+
+function selectAnswer() {
+    if (throwQuestion.lengh > questionIndex + 1) {
+    } else {
+        startButton.innerText = 'Save'
+        startButton.classList.remove('hide')
+    }
+    nextButton.classList.remove('hide')
+
 }
 
 var myQuestions = [
@@ -56,7 +67,7 @@ var myQuestions = [
          { text: 'var', correct: false },
          { text: 'let', correct: false },
          { text: 'constant', correct: false }
-         ] 
+                ] 
         },
         {
         question: 'Which of the following methods can be used to display data in some form using JavaScript?',
@@ -65,7 +76,7 @@ var myQuestions = [
         { text: 'console.log()', correct: false },
         { text: 'window.Alert', correct: false },
         { text: 'All the above', correct: true }
-             ]   
+                 ]   
         },
         {
         question: 'Which of the following keywords is used to define a variable in JavaScript?',

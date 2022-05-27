@@ -26,6 +26,22 @@ body {
     padding: 10px;
 }
 
+#highscore-btn {
+    background-color: var(--secondary);
+    border-radius: 5px;
+    padding: 10px 50px;
+    color: white;
+    outline: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+.highscore-btn:hover {
+    border-color: black;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px 0 black;
+}
 
 .page-content {
     width: 800px;
