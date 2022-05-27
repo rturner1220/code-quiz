@@ -5,19 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <div class="content">
-       <div><a href="/highscores">View high Scores</a></div>
-        <h1 class="page-title">Coding Quiz Challenge</h1>
-        <p>Try to answer the folling code-related questions within the time limit.<br>
-         Keep in mind that incorrect answers will penalize your score/time<br>
-         by ten seconds!</p>
-         
-        <button class="btn" id="quiz">Start Quiz</button>
+       <h1 a href="highscores">View High Scores</a></h1>
+       <div id="timer">
+           <h1>Time: 70</h1>
+       </div>
     </div>
-    
+    <div class="page-content">
+            <div id="quiz-content">
+                <div id="question">Coding Quiz Challenge</div>
+                <p>Please try to answer the following code-related questions <br> within the 70 seconds time limit.
+                    Keep in mind that incorrect answers will penalize your score/time
+                     by ten seconds!</p></div>
+                <div id="main-content" class = "hide">
+                <div id="answer-btn" class="btn-grid">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+            </div>
+              <div class="controls">
+                <button id= "quiz-btn" class="quiz-btn btn">Start Quiz</button>
+                <button id="continue-btn" class="continue-btn btn hide">Continue</button>
+              </div>
+    </div>
+        <div id= "countdown"></div>
+        
     <script src="./assets/js/quiz.js"></script>
 </body>
 </html>
