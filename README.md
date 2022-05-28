@@ -33,6 +33,4 @@ https://github.com/rturner1220/code-quiz
 https://rturner1220.github.io/code-quiz/
 
 
-
-Screenshots
-Screenshot.png
+![Screenshot](https://user-images.githubusercontent.com/101642385/170811581-2fd8c432-1a25-4b34-a1c4-b6b49a5a3ffa.png)
