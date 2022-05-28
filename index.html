@@ -5,51 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz</title>
-     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <div class="content">
+<div class="content">
+    <h1>
         <button id="highscore-btn" class="btn">View High Scores</button>
-       </h1>
-       <div id="timer">
+    </h1>
+    <div id="timer">
         <h1>Time: 70</h1>
-       </div>
     </div>
-    <div class="page-content">
-            <div id="quiz-content">
-                <div id="question">Coding Quiz Challenge<br><br><br><br>
-                Please try to answer the following code-related questions <br> within the 70 seconds time limit.
-                    Keep in mind that incorrect answers will penalize your score/time
-                     by ten seconds!</div>
-            </div>
-    <div id="main-content" class = "hide">
-        <div id="answer-btn" class="btn-grid"></div>
+</div>
+<div class="page-content">
+    <div id="quiz-content">
+        <div id="question">Coding Quiz Challenge<br><br><br><br>
+            Please try to answer the following code-related questions <br> within the 70 seconds time limit.
+            Keep in mind that incorrect answers will penalize your score/time
+            by ten seconds!
+        </div>
     </div>
-    
-    <div id="answer-feeback"></div>
-    
+    <div id="main-content" class="hide">
+        <div id="answers-container" class="btn-grid">
+        </div>
+
+        <div id="answer-feedback"></div>
+    </div>
 
     <div id="high-scores" class="hide">
         <table>
             <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Score</th>
-                    <th>Time</th>
-                </tr>
+            <tr>
+                <th>Name</th>
+                <th>Score</th>
+                <th>Time</th>
+            </tr>
             </thead>
             <tbody></tbody>
         </table>
-      </div>
     </div>
-      <div class="controls">
-        <button id= "quiz-btn" class="quiz-btn btn">Start Quiz</button>
-        <button id= "save-btn" class="quiz-btn btn hide">Save</button>
+
+    <div class="controls">
+        <button id="quiz-btn" class="quiz-btn btn">Start Quiz</button>
+        <button id="save-btn" class="quiz-btn btn hide">Save</button>
         <button id="continue-btn" class="continue-btn btn hide">Continue</button>
-      </div>
-    
-    <div id= "countdown"></div>
-        
-    <script src="./assets/js/quiz.js"></script>
+    </div>
+</div>
+<div id="countdown"></div>
+
+<script src="./assets/js/quiz.js"></script>
 </body>
 </html>
