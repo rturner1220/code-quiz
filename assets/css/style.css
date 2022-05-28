@@ -6,7 +6,6 @@
     :root{
         --primary: #0d495d;
         --secondary: #1e90ff;
-
     }
 
 body {
@@ -14,7 +13,7 @@ body {
     padding: 0;
     margin: 0;
     display: flex;
-    min-height: 100vh;
+    min-height: 115vh;
     min-width: 100vh;
     font-size: 20px;
 }
@@ -24,6 +23,16 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     padding: 10px;
+}
+
+#timer {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: center
+
 }
 
 #highscore-btn {
@@ -59,9 +68,8 @@ body {
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 24px;
+    padding-top: 25px;
 }
-
-
 
 .btn-grid {
     display: grid;
@@ -75,7 +83,7 @@ body {
 .btn {
     background-color: var(--secondary);
     border-radius: 5px;
-    padding: 10px 100px;
+    padding: 10px 50px;
     color: white;
     outline: none;
     font-size: 1.5rem;
@@ -91,14 +99,18 @@ body {
 
 .quiz-btn, .continue-btn {
     font-size: 2.0rem;
-    padding: 10px 30px;
+    padding: 10px 80px;
     cursor: pointer;
+    position: absolute;
+    margin-top: 15%;
+    margin-right: 53%;
 }
 
 .controls {
     display: flex;
     justify-content: center;
-    margin-top: 15%;
+    margin-top: 23%;
+
 }
 
 .hide {

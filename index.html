@@ -9,9 +9,10 @@
 </head>
 <body>
     <div class="content">
-       <h1 a href="/highscores" id="highscore-btn" class="btn">View High Scores</a></h1>
+        <button id="highscore-btn" class="btn">View High Scores</button>
+       </h1>
        <div id="timer">
-           <h1>Time: 70</h1>
+        <h1>Time: 70</h1>
        </div>
     </div>
     <div class="page-content">
@@ -20,21 +21,34 @@
                 Please try to answer the following code-related questions <br> within the 70 seconds time limit.
                     Keep in mind that incorrect answers will penalize your score/time
                      by ten seconds!</div>
-                </div>
-                <div id="main-content" class = "hide">
-                <div id="answer-btn" class="btn-grid">
-                    <button class="btn">Answer 1</button>
-                    <button class="btn">Answer 2</button>
-                    <button class="btn">Answer 3</button>
-                    <button class="btn">Answer 4</button>
-                </div>
             </div>
-              <div class="controls">
-                <button id= "quiz-btn" class="quiz-btn btn">Start Quiz</button>
-                <button id="continue-btn" class="continue-btn btn hide">Continue</button>
-              </div>
+    <div id="main-content" class = "hide">
+        <div id="answer-btn" class="btn-grid"></div>
     </div>
-        <div id= "countdown"></div>
+    
+    <div id="answer-feeback"></div>
+    
+
+    <div id="high-scores" class="hide">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Score</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+      </div>
+    </div>
+      <div class="controls">
+        <button id= "quiz-btn" class="quiz-btn btn">Start Quiz</button>
+        <button id= "save-btn" class="quiz-btn btn hide">Save</button>
+        <button id="continue-btn" class="continue-btn btn hide">Continue</button>
+      </div>
+    
+    <div id= "countdown"></div>
         
     <script src="./assets/js/quiz.js"></script>
 </body>

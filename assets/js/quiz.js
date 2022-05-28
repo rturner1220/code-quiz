@@ -1,4 +1,8 @@
 // first, starts to give function to the quiz-button
+
+var startingMinute = 10;
+var time = startingMinute * 60;
+var countdown = document.getElementById('timer')
 var startButton = document.getElementById('quiz-btn')
 var nextButton = document.getElementById('continue-btn')
 var mainContentElement = document.getElementById('main-content')
