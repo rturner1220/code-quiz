@@ -12,7 +12,7 @@ var CodeQuiz = (function () {
     var _highScoresTableBody;
     var _throwQuestion;
     var _questionIndex;
-    var _initialTimeSeconds = 10;
+    var _initialTimeSeconds = 50;
     var _penaltyTimeSeconds = 10;
     var _timeSeconds;
     var _timer;
@@ -191,7 +191,7 @@ var CodeQuiz = (function () {
       var el = e.target;
       var isCorrect = el.dataset.correct === 'true';
       var text = isCorrect ? "You picked the correct answer" : "Wrong answer!";
-  
+      
       if (isCorrect) {
         _score++;
       } else {

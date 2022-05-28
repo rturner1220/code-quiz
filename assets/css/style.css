@@ -114,10 +114,29 @@ body {
     margin-left: 33%;
 }
 
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 200px
+}
+
+.content-table thead tr {
+    background-color: var(--secondary);
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th, .content-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dddddd;
+}
+
+
 .hide {
     display: none;
 }   
-
 
 @media screen and (max-width: 780px) {
     .choice-content {
