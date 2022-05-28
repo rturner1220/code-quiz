@@ -1,17 +1,25 @@
-// first, starts to give function to the quiz-button
-
-var startingMinute = 10;
-var time = startingMinute * 60;
-var countdown = document.getElementById('timer')
-var startButton = document.getElementById('quiz-btn')
-var nextButton = document.getElementById('continue-btn')
-var mainContentElement = document.getElementById('main-content')
-var questionElement  = document.getElementById('question')
-var answerButtons = document.getElementById('answer-btn')
-
-var throwQuestion, questionIndex;
-
-
+var CodeQuiz = function () {
+    var _timerElement;
+    var _startButton;
+    var _nextButton;
+    var _saveButton;
+    var _viewHighScoresButton;
+    var _quizContent;
+    var _answersContainer;
+    var _answerFeedback;
+    var _questionElement;
+    var _highScoresContainer;
+    var _highScoresTableBody;
+    var _throwQuestion;
+    var _questionIndex;
+    var _initialTimeSeconds = 10;
+    var _penaltyTimeSeconds = 10;
+    var _timeSeconds;
+    var _timer;
+    var _score;
+    var _gameFinished = false;
+    var _highScores;
+}
 startButton.addEventListener('click', startQuiz)
 // going to the next question
 nextButton.addEventListener('click', () => {
